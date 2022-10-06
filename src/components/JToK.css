@@ -1,0 +1,35 @@
+.j-a-container{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.7em;
+}
+
+.j-a-each {
+    border: 2px solid rgb(247, 59, 7);
+    border-radius: 50%;
+    width: 5.1em;
+    height: 5.1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('https://garden.spoonflower.com/c/11607840/p/f/m/peqOPSMKNeQ-4d316OYvIpfE19ENwEyNsyXL0Ha-iF3sF_1_SseKS-Q/Playing%20Card%20Suits%20Checker%20-%20Black.jpg');
+    cursor: pointer;
+
+    /* NO HIGHLIGHTING IN BROWSER */
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+    /* NO HIGHLIGHTING IN BROWSER */
+}
+
+.j-k-num {
+        font-size: 3em;
+        color: rgb(255, 255, 255);
+        font-family: 'Quicksand', sans-serif;
+        font-weight: bold;
+
+}

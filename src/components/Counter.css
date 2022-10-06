@@ -1,0 +1,38 @@
+.counter-container {
+    /* NO HIGHLIGHTING IN BROWSER */
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+    /* NO HIGHLIGHTING IN BROWSER */
+}
+
+.title-div {
+    display: grid;
+    grid-template-columns: repeat(3, 33.3%);
+    align-items: center;
+}
+.title {
+    font-size: 1em;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 33.3%);
+    align-items: center;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+}
+
+.true-count-count {
+    font-size: 5em;
+}
+.count-count {
+    font-size:5em;
+
+}
