@@ -4,7 +4,7 @@ function TenToSeven({num, setTenSev, setDecks, decks, count, setTrueCount}) {
     function handleClick() {
         if(decks > 0){
             setDecks(prev => prev - 1)
-            setTrueCount((count / (decks / 52)).toFixed(2))
+            setTrueCount((count / (decks / 52)).toFixed(1))
             setTenSev(prev => prev - 1)
         }
     }

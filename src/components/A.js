@@ -5,7 +5,7 @@ function A({setTrueCount, setAces, setCount, count, decks, setDecks}) {
         if(decks > 0) {
             setCount(prev => prev - 1)
             setDecks(prev => prev - 1)
-            setTrueCount((count / (decks / 52)).toFixed(2))
+            setTrueCount((count / (decks / 52)).toFixed(1))
             setAces(prev => prev - 1)
         }
     }

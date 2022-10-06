@@ -20,6 +20,8 @@ function Counter({ trueCount, aces, setAces, setJackKing, jackKing, tenSev, setT
         setAces(((decks / 52 * 4)))
         
     },[changed])
+
+    console.log(((twoSix / decks) * 100).toFixed(1))
   return (
     <div className="counter-container">
       <div className="title-div">
@@ -52,13 +54,13 @@ function Counter({ trueCount, aces, setAces, setJackKing, jackKing, tenSev, setT
         </div>
         <div>
           <p>2-6</p>
-          <p>{twoSix}: {((twoSix / decks) * 100).toFixed(1)}%</p>
+          <p>{twoSix}: {isNaN(((twoSix / decks) * 100).toFixed(1)) ? 0 : ((twoSix / decks) * 100).toFixed(1)}%</p>
           <p>7-9</p>
-          <p>{tenSev}: {((tenSev / decks) * 100).toFixed(1)}%</p>
+          <p>{tenSev}: {isNaN(((tenSev / decks) * 100).toFixed(1)) ? 0 : ((tenSev / decks) * 100).toFixed(1)}%</p>
           <p>J-K</p>
-          <p>{jackKing}: {((jackKing / decks) * 100).toFixed(1)}%</p>
+          <p>{jackKing}: {isNaN(((jackKing / decks) * 100).toFixed(1)) ? 0 : ((jackKing / decks) * 100).toFixed(1)}%</p>
           <p>A</p>
-          <p>{aces}: {((aces / decks) * 100).toFixed(1)}%</p>
+          <p>{aces}: {isNaN(((aces / decks) * 100).toFixed(1)) ? 0 : ((aces / decks) * 100).toFixed(1)}%</p>
           <p></p>
         </div>
       </div>

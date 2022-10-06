@@ -7,7 +7,7 @@ function JToK({num, setJackKing, setTrueCount, setCount, setDecks, decks, count}
 
       setCount(prev => prev - 1)
       setDecks(prev => prev - 1)
-      setTrueCount((count / (decks / 52)).toFixed(2))
+      setTrueCount((count / (decks / 52)).toFixed(1))
       setJackKing(prev => prev - 1)
     }
   }
